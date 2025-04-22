@@ -57,9 +57,6 @@ chown -R $name:$name /home/$name/.xprofile
 chown -R $name:$name /home/$name/.bashrc
 #mv /middle.png /home/$USER
 
-cp /root/.bashrc /home/$name/.bashrc
-chown -R $name:$name /home/$name/.bashrc
-
 mv /resolv.conf /etc/resolv.conf
 chattr +i /etc/resolv.conf
 chattr +i /etc/os-release
