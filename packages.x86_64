@@ -160,7 +160,7 @@ qt6-wayland
 glu
 #calamaresos
 #calamares
-calamares-app
+calamares-git
 calamares-config-xfce
 #gnome-disk-utility
 # fastfetch
