@@ -168,6 +168,7 @@ calamares-config-xfce
 # webapp-manager
 cups
 xxkpmcore
+kpmcore
 electron31
 networkmanager
 network-manager-applet
@@ -228,7 +229,7 @@ blueman
 fastfetch
 fzf
 StormOS-conf
-stormos-grub-theme
+# stormos-grub-theme
 pamac-aur-git
 compiz-easy-patch
 adw-gtk-theme-git
