@@ -27,6 +27,7 @@ e2fsprogs
 efibootmgr
 espeakup
 ethtool
+engrampa
 exfatprogs
 fatresize
 fsarchiver
@@ -159,14 +160,14 @@ qt6-wayland
 glu
 #calamaresos
 #calamares
-calamares-git
+calamares-app
 calamares-config-xfce
 #gnome-disk-utility
 # fastfetch
 # cinnamon-configs
 # webapp-manager
 cups
-kpmcore
+xxkpmcore
 electron31
 networkmanager
 network-manager-applet
@@ -232,3 +233,5 @@ pamac-aur-git
 compiz-easy-patch
 adw-gtk-theme-git
 chromium
+gvfs
+mousepad

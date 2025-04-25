@@ -1,0 +1,67 @@
+# StormOS Grub Theme
+#
+# Copyright (C) 2021 StormOS-Dev
+
+# Settings
+title-text: ""
+title-color: "#0fa2f2"
+desktop-image: "background.png"
+desktop-color: "#000000"
+terminal-box: "terminal_box_*.png"
+terminal-font: "Unifont Regular 16"
+
+# Progress bar
++ progress_bar {
+	id = "__timeout__"
+	left = 0
+	top = 100%-10
+	height = 15
+	width = 100%
+	show_text = false
+	# just two vertical pixels of color #1793d1
+    bar_style = "progress_bar/progress_bar_*.png"
+    highlight_style = "progress_bar/progress_bar_hl_*.png"
+}
+
+
+# Show countdown message
++ label {
+	top = 3%
+	left = 37%-23
+	width = 30%
+	align = "center"
+	id = "__timeout__"
+	text = "Booting in %d seconds"
+	color = "#0fa2f2"
+	font = "Unifont Regular 16"
+}
+
+# Show the boot menu
++ boot_menu {
+	left = 25%
+  	top = 40%
+  	width = 50%
+  	height = 60%
+  	item_font = "Unifont Regular 16"
+  	item_color = "#0fa2f2"
+  	selected_item_color = "#011018"
+  	icon_width = 26
+  	icon_height = 26
+  	item_icon_space = 10
+  	item_height = 34
+  	item_padding = 5
+  	item_spacing = 7
+  	selected_item_pixmap_style = "select_*.png"
+}
+
+#help bar
++ label {
+	top = 100%-70
+	left = 0
+	width = 100%
+	height = 20
+	text = "@KEYMAP_MIDDLE@"
+	align = "center"
+	font = "Unifont Regular 16"
+	color = "#e8e8e8"
+}

@@ -69,30 +69,22 @@ LocalFileSigLevel = Optional
 # repo name header and Include lines. You can add preferred servers immediately
 # after the header, and they will be used before the default mirrors.
 
-#[testing]
-#Include = /etc/pacman.d/mirrorlist
+[e
 
-[core]
-Include = /etc/pacman.d/mirrorlist
 
-[extra]
-Include = /etc/pacman.d/mirrorlist
+acreetionOSREPO]
+SigLevel = Optional
+Server = https://darrengames.ddns.net:1500/repo/$arch
+
+#[acreetionOSREPO-main]
+#SigLevel = Optional
+#Server = https://darrengames.ddns.net:1500/repo-main/$arch
 
 # If you want to run 32 bit applications on your x86_64 system,
 # enable the multilib repositories as required here.
 
-#[multilib-testing]
-#Include = /etc/pacman.d/mirrorlist
+[personal]
+SigLevel = Optional
+Server = https://darrengames.ddns.net:1500/personal
 
-[multilib]
-Include = /etc/pacman.d/mirrorlist
 
-# An example of a custom package repository.  See the pacman manpage for
-# tips on creating your own repositories.
-#[custom]
-#SigLevel = Optional TrustAll
-#Server = file:///home/custompkgs
-
-[stormos]
-SigLevel = Never
-Server = https://bfitzgit23.github.io/$repo/$arch
