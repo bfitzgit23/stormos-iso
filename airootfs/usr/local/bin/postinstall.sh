@@ -73,9 +73,6 @@ cp /archiso.conf /etc/mkinitcpio.conf.d/archiso.conf
 
 # cp -r /cinnamon-configs/cinnamon-stuff/extensions /home/$name/.local/share/cinnamon/
 
-rm /home/$name/Desktop/calamares.desktop
-rm /usr/share/applications/calamares.desktop
-
 plymouth-set-default-theme stormos
 
 rm -rf /etc/pacman.d/gnupg/*
