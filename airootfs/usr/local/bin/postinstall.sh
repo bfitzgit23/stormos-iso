@@ -75,10 +75,8 @@ cp /archiso.conf /etc/mkinitcpio.conf.d/archiso.conf
 
 plymouth-set-default-theme stormos
 
-rm /var/lib/pacman/sync/*
-rm -rf /etc/pacman.d/gnupg/*
-pacman-key --init
-pacman-key --populate archlinux
-echo "keyserver hkp://keyserver.ubuntu.com:80" | sudo tee --append /etc/pacman.d/gnupg/gpg.conf
-pacman -Sy --noconfirm archlinux-keyring
+chsh -s /bin/bash root
 
+echo "Defaults pwfeedback" | sudo EDITOR='tee -a' visudo >/dev/null 2>&1
+
+cp /etc/pacman2.conf pacman.conf
