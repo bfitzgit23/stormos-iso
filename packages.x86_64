@@ -2,14 +2,13 @@ alsa-utils
 amd-ucode
 #intel-compute-runtime
 arch-install-scripts
-archlinux-keyring
 #dracut
 #archiso 
 b43-fwcutter
 base
 bind
 bolt
-brltty
+#brltty
 broadcom-wl-dkms
 #btrfs-progs
 #xfsprogs
@@ -27,7 +26,6 @@ e2fsprogs
 efibootmgr
 espeakup
 ethtool
-engrampa
 exfatprogs
 fatresize
 fsarchiver
@@ -74,7 +72,6 @@ nilfs-utils
 nmap
 ntfs-3g
 nvme-cli
-networkmanager
 os-prober
 open-iscsi
 open-vm-tools
@@ -85,7 +82,6 @@ openvpn
 partclone
 parted
 partimage
-preload
 pcsclite
 ppp
 pptpclient
@@ -118,8 +114,7 @@ wireless-regdb
 wireless_tools
 wvdial
 xl2tpd
-zsh
-#cinnamon
+zsh#cinnamon
 #cinnamon-control-center
 #cinnamon-desktop
 #cinnamon-menus
