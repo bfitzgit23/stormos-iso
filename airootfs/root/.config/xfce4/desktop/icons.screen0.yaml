@@ -11,6 +11,13 @@ configs:
       y: 0
       width: 1920
       height: 1080
+  - id: "6eb1fedfcce58c074ac0c07dc65a78c3ef4f2187"
+    display_name: "AU Optronics 0x63ED (eDP-1)"
+    geometry:
+      x: 0
+      y: 0
+      width: 1920
+      height: 1080
   - id: "ce3e162d19b5d88b0a753bf401ade6843cf9f898"
     display_name: "Chimei Innolux Corporation 0x175C (eDP-1)"
     geometry:
@@ -28,11 +35,11 @@ configs:
     "/home/test/Desktop/StormOS_Recorder.desktop":
       row: 1
       col: 1
-    "/home/test/Desktop/system-tool.desktop":
-      row: 3
-      col: 0
     "/home/liveuser/Desktop/calamares.desktop":
       row: 1
+      col: 0
+    "/home/test/Desktop/StormOS-ISO":
+      row: 5
       col: 0
     "/home/ben/Desktop/StormOS_Download_Manager.desktop":
       row: 2
@@ -40,11 +47,11 @@ configs:
     "/home/liveuser/Desktop/StormOS_mirrors.desktop":
       row: 2
       col: 0
-    "/home/test/Desktop/StormOS-ISO":
-      row: 5
-      col: 0
     "/home/ben/Desktop/StormOS_Browser.desktop":
       row: 1
+      col: 0
+    "/home/test/Desktop/system-tool.desktop":
+      row: 3
       col: 0
     "/home/ben/Desktop/stormos-kernel-manager.desktop":
       row: 4
@@ -100,18 +107,18 @@ configs:
     "/home/ben/Desktop/calamares.desktop":
       row: 0
       col: 1
-    "/home/liveuser/Desktop/StormOS_Download_Manager.desktop":
-      row: 6
-      col: 0
     "/home/test/Desktop/StomOS Package Manager.desktop":
       row: 4
-      col: 0
-    "/home/test/Desktop/stormos-build-files":
-      row: 6
       col: 0
     "/home/liveuser/Desktop/StomOS Package Manager.desktop":
       row: 0
       col: 1
+    "/home/test/Desktop/stormos-build-files":
+      row: 6
+      col: 0
+    "/home/liveuser/Desktop/StormOS_Download_Manager.desktop":
+      row: 6
+      col: 0
     "/home/liveuser/Desktop/StormOS_Recorder.desktop":
       row: 3
       col: 0

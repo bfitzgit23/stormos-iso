@@ -4,6 +4,7 @@
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
     <value type="int" value="1"/>
+    <property name="dark-mode" type="bool" value="false"/>
     <property name="panel-1" type="empty">
       <property name="position" type="string" value="p=8;x=640;y=782"/>
       <property name="length" type="uint" value="100"/>
@@ -29,24 +30,23 @@
         <value type="int" value="13"/>
         <value type="int" value="14"/>
       </property>
-      <property name="length-adjust" type="bool" value="true"/>
       <property name="background-style" type="uint" value="1"/>
-      <property name="autohide-behavior" type="uint" value="0"/>
       <property name="background-rgba" type="array">
         <value type="double" value="0"/>
         <value type="double" value="0"/>
         <value type="double" value="0"/>
         <value type="double" value="0.66329966329966328"/>
       </property>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
     </property>
-    <property name="dark-mode" type="bool" value="false"/>
   </property>
   <property name="plugins" type="empty">
     <property name="plugin-2" type="string" value="tasklist">
       <property name="grouping" type="uint" value="1"/>
       <property name="show-labels" type="bool" value="false"/>
-      <property name="show-tooltips" type="bool" value="true"/>
       <property name="show-handle" type="bool" value="false"/>
+      <property name="show-tooltips" type="bool" value="true"/>
     </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
@@ -54,15 +54,10 @@
     </property>
     <property name="plugin-5" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+      <property name="expand" type="empty"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
-      <property name="show-frame" type="bool" value="false"/>
       <property name="square-icons" type="bool" value="true"/>
-      <property name="names-ordered" type="array">
-        <value type="string" value="taskmanager"/>
-        <value type="string" value="network-manager-applet"/>
-      </property>
-      <property name="icon-size" type="int" value="0"/>
       <property name="known-legacy-items" type="array">
         <value type="string" value="wi-fi network connection “spectrumsetup-3891” active: spectrumsetup-3891 (64%)"/>
         <value type="string" value="pamac-tray"/>
@@ -84,14 +79,63 @@
         <value type="string" value="blueman"/>
         <value type="string" value="octopi-notifier"/>
       </property>
+      <property name="show-frame" type="bool" value="false"/>
+      <property name="names-ordered" type="array">
+        <value type="string" value="taskmanager"/>
+        <value type="string" value="network-manager-applet"/>
+      </property>
+      <property name="icon-size" type="int" value="0"/>
+    </property>
+    <property name="plugin-7" type="string" value="whiskermenu">
+      <property name="style" type="empty"/>
+      <property name="position-categories-horizontal" type="bool" value="false"/>
+      <property name="position-categories-alternate" type="bool" value="true"/>
+      <property name="position-profile-alternate" type="bool" value="true"/>
+      <property name="position-search-alternate" type="bool" value="false"/>
+      <property name="position-commands-alternate" type="bool" value="false"/>
+      <property name="show-button-title" type="bool" value="true"/>
+      <property name="button-title" type="string" value="StormOS"/>
+      <property name="hover-switch-category" type="bool" value="true"/>
+      <property name="button-icon" type="string" value="Lightning_Logo1"/>
+      <property name="recent" type="array">
+        <value type="string" value="chromium.desktop"/>
+        <value type="string" value="compiz-gtk-decorator-theme-selector.desktop"/>
+        <value type="string" value="xfce-ui-settings.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="org.manjaro.pamac.manager.desktop"/>
+        <value type="string" value="hplip.desktop"/>
+        <value type="string" value="xfce-session-settings.desktop"/>
+      </property>
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="digital-layout" type="empty"/>
+      <property name="digital-date-font" type="empty"/>
+      <property name="digital-time-font" type="empty"/>
+      <property name="digital-date-format" type="empty"/>
+      <property name="digital-time-format" type="empty"/>
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
       <property name="known-players" type="string" value="Brave;Chromium;Vivaldi;vlc"/>
     </property>
+    <property name="plugin-1" type="string" value="launcher">
+      <property name="hover-switch-category" type="empty"/>
+      <property name="category-icon-size" type="empty"/>
+      <property name="menu-opacity" type="empty"/>
+      <property name="recent" type="empty"/>
+      <property name="button-icon" type="empty"/>
+      <property name="show-button-title" type="empty"/>
+      <property name="button-title" type="empty"/>
+      <property name="favorites" type="empty"/>
+      <property name="items" type="array">
+        <value type="string" value="17394352791.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-4" type="empty"/>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
-    <property name="plugin-10" type="string" value="notification-plugin"/>
+    <property name="plugin-10" type="string" value="notification-plugin">
+      <property name="enable-keyboard-shortcuts" type="empty"/>
+      <property name="known-players" type="empty"/>
+    </property>
     <property name="plugin-11" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
@@ -100,6 +144,7 @@
       <property name="digital-time-format" type="string" value="%I:%M %p"/>
       <property name="digital-layout" type="uint" value="3"/>
       <property name="timezone" type="string" value="EST5EDT"/>
+      <property name="digital-time-font" type="string" value="Ubuntu Mono 13"/>
     </property>
     <property name="plugin-13" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
@@ -135,35 +180,8 @@
         <value type="string" value="15657829254.desktop"/>
       </property>
     </property>
-    <property name="plugin-7" type="string" value="whiskermenu">
-      <property name="position-categories-horizontal" type="bool" value="false"/>
-      <property name="position-categories-alternate" type="bool" value="true"/>
-      <property name="position-profile-alternate" type="bool" value="true"/>
-      <property name="position-search-alternate" type="bool" value="false"/>
-      <property name="position-commands-alternate" type="bool" value="false"/>
-      <property name="show-button-title" type="bool" value="true"/>
-      <property name="button-title" type="string" value="StormOS"/>
-      <property name="hover-switch-category" type="bool" value="true"/>
-      <property name="button-icon" type="string" value="Lightning_Logo1"/>
-      <property name="recent" type="array">
-        <value type="string" value="qt5ct.desktop"/>
-        <value type="string" value="qt6ct.desktop"/>
-        <value type="string" value="compiz-gtk-decorator-theme-selector.desktop"/>
-        <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="kvantummanager.desktop"/>
-        <value type="string" value="xfce-ui-settings.desktop"/>
-        <value type="string" value="system-config-printer.desktop"/>
-        <value type="string" value="hplip.desktop"/>
-        <value type="string" value="xfce-session-settings.desktop"/>
-      </property>
-    </property>
     <property name="plugin-15" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-1" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17394352791.desktop"/>
-      </property>
     </property>
   </property>
 </channel>

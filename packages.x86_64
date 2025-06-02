@@ -22,6 +22,7 @@ dmidecode
 #dmraid
 dnsmasq
 dosfstools
+ttf-dejavu
 e2fsprogs
 efibootmgr
 espeakup
