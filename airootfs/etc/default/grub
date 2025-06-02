@@ -1,0 +1,9 @@
+GRUB_CMDLINE_LINUX_DEFAULT='quiet splash'
+GRUB_DEFAULT='saved'
+GRUB_DISABLE_OS_PROBER='false'
+GRUB_DISABLE_RECOVERY='true'
+GRUB_DISABLE_SUBMENU='true'
+GRUB_TERMINAL_OUTPUT='gfxterm'
+GRUB_TIMEOUT='5'
+GRUB_DISTRIBUTOR='StormOS'
+GRUB_THEME="/usr/share/grub/themes/stormos/theme.txt"
