@@ -80,3 +80,5 @@ chsh -s /bin/bash root
 echo "Defaults pwfeedback" | sudo EDITOR='tee -a' visudo >/dev/null 2>&1
 
 cp /etc/pacman2.conf pacman.conf
+
+pacman-key --allow-weak-key-signatures
