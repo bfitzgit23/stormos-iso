@@ -228,6 +228,8 @@ StormOS-conf
 stormos-grub-theme
 pamac-aur-git
 compiz-easy-patch
+chaotic-keyring
+chaotic-mirrorlist
 adw-gtk-theme-git
 chromium
 gvfs
