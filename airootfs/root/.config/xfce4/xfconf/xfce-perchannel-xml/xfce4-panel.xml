@@ -15,8 +15,11 @@
         <value type="int" value="7"/>
         <value type="int" value="22"/>
         <value type="int" value="19"/>
+        <value type="int" value="4"/>
+        <value type="int" value="21"/>
+        <value type="int" value="20"/>
+        <value type="int" value="16"/>
         <value type="int" value="15"/>
-        <value type="int" value="1"/>
         <value type="int" value="17"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
@@ -98,13 +101,16 @@
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="button-icon" type="string" value="Lightning_Logo1"/>
       <property name="recent" type="array">
-        <value type="string" value="chromium.desktop"/>
+        <value type="string" value="system-tool.desktop"/>
+        <value type="string" value="discord.desktop"/>
+        <value type="string" value="xfce4-mime-settings.desktop"/>
+        <value type="string" value="thunar-settings.desktop"/>
+        <value type="string" value="guvcview.desktop"/>
+        <value type="string" value="org.gnome.DiskUtility.desktop"/>
         <value type="string" value="compiz-gtk-decorator-theme-selector.desktop"/>
+        <value type="string" value="xfce-mouse-settings.desktop"/>
         <value type="string" value="xfce-ui-settings.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="org.manjaro.pamac.manager.desktop"/>
-        <value type="string" value="hplip.desktop"/>
-        <value type="string" value="xfce-session-settings.desktop"/>
       </property>
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
@@ -117,7 +123,7 @@
       <property name="show-notifications" type="bool" value="true"/>
       <property name="known-players" type="string" value="Brave;Chromium;Vivaldi;vlc"/>
     </property>
-    <property name="plugin-1" type="string" value="launcher">
+    <property name="plugin-1" type="empty">
       <property name="hover-switch-category" type="empty"/>
       <property name="category-icon-size" type="empty"/>
       <property name="menu-opacity" type="empty"/>
@@ -126,11 +132,12 @@
       <property name="show-button-title" type="empty"/>
       <property name="button-title" type="empty"/>
       <property name="favorites" type="empty"/>
+    </property>
+    <property name="plugin-4" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17394352791.desktop"/>
+        <value type="string" value="17507103441.desktop"/>
       </property>
     </property>
-    <property name="plugin-4" type="empty"/>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin">
       <property name="enable-keyboard-shortcuts" type="empty"/>
@@ -182,6 +189,21 @@
     </property>
     <property name="plugin-15" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-16" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17507103482.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-20" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17507103554.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-21" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17507125195.desktop"/>
+      </property>
     </property>
   </property>
 </channel>
