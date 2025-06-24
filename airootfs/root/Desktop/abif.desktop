@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Install StormOS (CLI)
+Comment=Command Line Installer For StormOS
+Exec=alacritty --class 'alacritty-float,alacritty-float' --config-file /abif-master/alacritty.toml --title 'StormOS Installer (CLI)' -e sudo /abif-master/abif
+Icon=storm\ os.png
+Type=Application
+Categories=System;
