@@ -32,6 +32,8 @@ fatresize
 fsarchiver
 # gnu-netcat
 gpart
+glib2
+gobject-introspection
 gpm
 gptfdisk
 grub
@@ -191,6 +193,7 @@ python
 python-six
 python-pam
 python312-main
+python-gobject
 base-devel
 git
 python-pip
