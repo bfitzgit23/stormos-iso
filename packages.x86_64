@@ -225,3 +225,5 @@ gvfs
 mousepad
 gnome-disk-utility
 stormos_installer
+libffi
+libgirepository
