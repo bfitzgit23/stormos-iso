@@ -145,14 +145,14 @@ qt6-wayland
 glu
 #calamaresos
 #calamares
-#calamares-git
-#calamares-config-xfce
+calamares-git
+calamares-config-xfce
 #gnome-disk-utility
 # fastfetch
 # cinnamon-configs
 # webapp-manager
 cups
-#xxkpmcore
+xxkpmcore
 kpmcore
 electron31
 networkmanager
@@ -224,6 +224,5 @@ chromium
 gvfs
 mousepad
 gnome-disk-utility
-stormos_installer
 libffi
 libgirepository
