@@ -143,9 +143,8 @@ qt6-translations
 qt6-wayland
 #libkf6crash-devel
 glu
-#calamaresos
-#calamares
-calamares-git
+calamares-app
+#calamares-git
 calamares-config-xfce
 #gnome-disk-utility
 # fastfetch
