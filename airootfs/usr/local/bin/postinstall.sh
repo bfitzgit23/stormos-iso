@@ -87,3 +87,5 @@ pacman-key --lsign-key 3056513887B78AEB
 
 rm -rf /usr/share/backgrounds/xfce
 chown -R $name:$name /usr/share/backgrounds/* 
+
+rm $home/$name/Desktop/calamares.desktop
