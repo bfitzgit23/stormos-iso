@@ -1010,7 +1010,7 @@ class BookmarkSearcher(QDialog):
         self.search_timer.start(300)  # 300ms delay
     
     def perform_search(self):
-        """Perform the actual search with current filters."""
+        """Perform the actual search with current filters, including descriptions."""
         query = self.search_bar.text().strip()
         self.last_search = query
         self.results_list.clear()
@@ -1024,18 +1024,17 @@ class BookmarkSearcher(QDialog):
             return
             
         # Get search parameters
-        mode = self.search_mode.currentIndex()
+        mode = self.search_mode.currentIndex()  # 0=All, 1=Titles, 2=URLs, 3=Folders, 4=Descriptions
         case_sensitive = self.case_sensitive.isChecked()
         
-        # Prepare search
+        # Prepare search function
         if case_sensitive:
-            query = query
             search_func = lambda text: query in text if text else False
         else:
             query = query.lower()
             search_func = lambda text: query in text.lower() if text else False
         
-        # Filter bookmarks
+        # Filter bookmarks - now including description in all relevant modes
         matches = []
         for bookmark in self.all_bookmarks:
             title_match = (mode in [0, 1]) and search_func(bookmark.get("title", ""))
@@ -1046,14 +1045,14 @@ class BookmarkSearcher(QDialog):
             if title_match or url_match or folder_match or desc_match:
                 matches.append(bookmark)
         
-        # Display results
+        # Display results with enhanced sorting that includes description relevance
         if matches:
-            # Sort by relevance (title matches first, then description, then URL, then folder)
+            # Sort by relevance (title > description > URL > folder matches)
             matches.sort(key=lambda x: (
-                not search_func(x.get("title", "")),      # Title matches first
-                not search_func(x.get("description", "")), # Then description
-                not search_func(x.get("url", "")),         # Then URL
-                x.get("title", "").lower()                # Then alphabetical
+                not search_func(x.get("title", "")),       # Title matches first
+                not search_func(x.get("description", "")), # Then description matches
+                not search_func(x.get("url", "")),         # Then URL matches
+                x.get("title", "").lower()                # Then alphabetical by title
             ))
             
             for bookmark in matches:
@@ -1067,13 +1066,13 @@ class BookmarkSearcher(QDialog):
             self.status_bar.showMessage("No matches found", 3000)
     
     def create_bookmark_display(self, bookmark):
-        """Create formatted display text for a bookmark."""
+        """Create formatted display text for a bookmark, highlighting matches in description."""
         title = bookmark.get("title", "") or "Untitled"
         url = bookmark.get("url", "")
         folder = bookmark.get("folder", "Uncategorized")
         description = bookmark.get("description", "")
         
-        # Highlight search terms if present
+        # Highlight search terms in all fields including description
         if self.last_search:
             if not self.case_sensitive:
                 search = self.last_search.lower()
@@ -1088,35 +1087,25 @@ class BookmarkSearcher(QDialog):
                 folder_lower = folder
                 desc_lower = description
             
-            # Highlight matches in all fields
-            for field, value in [("title", title), ("url", url), 
-                               ("folder", folder), ("description", description)]:
-                if search in locals()[f"{field}_lower"]:
-                    idx = locals()[f"{field}_lower"].index(search)
-                    highlighted = (value[:idx] + "<b>" + value[idx:idx+len(search)] + "</b>" + 
-                                 value[idx+len(search):])
-                    if field == "title":
-                        title = highlighted
-                    elif field == "url":
-                        url = highlighted
-                    elif field == "folder":
-                        folder = highlighted
-                    elif field == "description":
-                        description = highlighted
+            # Apply highlighting to description if it matches
+            if search in desc_lower:
+                idx = desc_lower.index(search)
+                description = (description[:idx] + "<b>" + description[idx:idx+len(search)] + "</b>" + 
+                             description[idx+len(search):])
         
-        # Build HTML display
+        # Build HTML display with description
         html = f"""
         <div style="margin-bottom: 5px;">
             <span style="font-weight: bold; font-size: 14px;">{title}</span><br>
             <span style="color: #888; font-size: 12px;">{url}</span><br>
-            {f'<span style="color: #555; font-size: 11px;">{description}</span><br>' if description else ''}
+            {f'<span style="color: #666; font-style: italic; font-size: 12px;">{description}</span><br>' if description else ''}
             <span style="color: #555; font-size: 11px;">Folder: {folder}</span>
         </div>
         """
         return html
-    
-    # ... (rest of the class remains the same)
+#===================================================================
 
+#===================================================================
 
 class BookmarkLoader(QObject):
     """Enhanced to load descriptions from various sources"""
@@ -1820,6 +1809,122 @@ class BrowserMainWindow(QMainWindow):
         
         # Load initial page
         self.add_new_tab(QUrl(self.settings_manager.get("home_page")))
+
+
+
+
+# Then define the dark theme variant AFTER BrowserMainWindow is defined
+class StormBrowserDark(BrowserMainWindow):
+    def __init__(self):
+        super().__init__()  # This properly initializes the parent BrowserMainWindow
+        self.setWindowTitle("Storm Browser - Dark Theme")
+        self.apply_firefox_dark_theme()
+        
+    def apply_firefox_dark_theme(self):
+        """Apply Firefox-inspired dark theme styling"""
+        # Firefox Proton dark theme colors
+        self.theme_colors = {
+            "toolbar": "#23222b",
+            "address_bar": "#42414d",
+            "text": "#fbfbfe",
+            "button_hover": "#52525e",
+            "button_active": "#5b5b66",
+            "tab_selected": "#15141a",
+            "tab_unselected": "#23222b",
+            "tab_hover": "#2f2f3a",
+            "accent": "#45a1ff",
+            "divider": "#1c1b22"
+        }
+        
+        # Base stylesheet
+        stylesheet = f"""
+        /* Main window */
+        QMainWindow {{
+            background-color: {self.theme_colors["toolbar"]};
+            color: {self.theme_colors["text"]};
+        }}
+        
+        /* Tab bar */
+        QTabBar {{
+            background-color: {self.theme_colors["toolbar"]};
+            spacing: 4px;
+        }}
+        
+        QTabBar::tab {{
+            background-color: {self.theme_colors["tab_unselected"]};
+            color: {self.theme_colors["text"]};
+            border: 0;
+            border-radius: 4px 4px 0 0;
+            padding: 6px 12px;
+            margin-right: 2px;
+        }}
+        
+        QTabBar::tab:selected {{
+            background-color: {self.theme_colors["tab_selected"]};
+            border-bottom: 2px solid {self.theme_colors["accent"]};
+        }}
+        
+        QTabBar::tab:hover {{
+            background-color: {self.theme_colors["tab_hover"]};
+        }}
+        
+        /* Address bar */
+        QLineEdit {{
+            background-color: {self.theme_colors["address_bar"]};
+            color: {self.theme_colors["text"]};
+            border: 1px solid {self.theme_colors["divider"]};
+            border-radius: 4px;
+            padding: 5px 8px;
+            selection-background-color: {self.theme_colors["accent"]};
+        }}
+        
+        /* Toolbar buttons */
+        QToolButton {{
+            background-color: transparent;
+            border: none;
+            padding: 5px;
+            border-radius: 4px;
+        }}
+        
+        QToolButton:hover {{
+            background-color: {self.theme_colors["button_hover"]};
+        }}
+        
+        QToolButton:pressed {{
+            background-color: {self.theme_colors["button_active"]};
+        }}
+        """
+        
+        self.setStyleSheet(stylesheet)
+        
+        # Configure tab bar
+        self.tab_widget.setDocumentMode(True)
+        self.tab_widget.setElideMode(Qt.ElideRight)
+        
+        # Update new tab button style
+        if hasattr(self.tab_widget, 'cornerWidget'):
+            new_tab_btn = self.tab_widget.cornerWidget()
+            if new_tab_btn:
+                new_tab_btn.setStyleSheet(f"""
+                    QToolButton {{
+                        background-color: {self.theme_colors["button_hover"]};
+                        color: {self.theme_colors["text"]};
+                        border-radius: 4px;
+                        font-weight: bold;
+                        min-width: 24px;
+                        max-width: 24px;
+                    }}
+                    QToolButton:hover {{
+                        background-color: {self.theme_colors["accent"]};
+                    }}
+                """)
+
+# Modify the main() function to use StormBrowserDark
+
+
+
+
+
 
     def setup_menus(self):
         """Initialize all menu bars"""
@@ -3964,7 +4069,8 @@ def main():
     app.setApplicationName("Storm Browser")
     app.setApplicationVersion("12.0")
     
-    window = BrowserMainWindow()
+    # Use our dark theme browser class
+    window = StormBrowserDark()
     window.show()
     sys.exit(app.exec_())
 
