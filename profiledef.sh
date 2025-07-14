@@ -35,6 +35,6 @@ file_permissions=(
   ["/usr/local/bin/stormos-final"]="0:0:755"
   ["/usr/bin/calamares"]="0:0:755"
   ["/usr/bin/wifi-connection.sh"]="0:0:755"
-  ["/usr/bin/sbrowserv12.2.py"]="0:0:755"
+  ["/usr/bin/sbrowserv12.3.py"]="0:0:755"
 )
 
