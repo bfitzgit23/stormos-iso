@@ -75,8 +75,6 @@ cp /archiso.conf /etc/mkinitcpio.conf.d/archiso.conf
 
 plymouth-set-default-theme stormos
 
-chsh -s /bin/bash root
-
 echo "Defaults pwfeedback" | sudo EDITOR='tee -a' visudo >/dev/null 2>&1
 
 pacman-key --init
