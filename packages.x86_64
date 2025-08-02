@@ -143,7 +143,7 @@ qt6-translations
 qt6-wayland
 #libkf6crash-devel
 glu
-calamares-app
+calamares-git
 #calamares-git
 calamares-config-xfce
 #gnome-disk-utility
