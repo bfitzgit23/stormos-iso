@@ -55,4 +55,4 @@ nvidia-persistenced:x:143:
 lightdm:x:969:
 git:x:968:
 torguard:x:967:
-autologin:x:966:root
+autologin:x:966:stormos
