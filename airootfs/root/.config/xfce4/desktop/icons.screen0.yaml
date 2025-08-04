@@ -29,6 +29,9 @@ configs:
     "/home/test/Desktop/StormOS_Python_Manager.desktop":
       row: 0
       col: 0
+    "/home/bennji/Desktop/stormos_browser.desktop":
+      row: 1
+      col: 0
     "/home/liveuser/Desktop/StormOS_Python_Manager.desktop":
       row: 4
       col: 0
@@ -44,14 +47,17 @@ configs:
     "/home/ben/Desktop/StormOS_Download_Manager.desktop":
       row: 2
       col: 0
-    "/home/liveuser/Desktop/StormOS_mirrors.desktop":
-      row: 2
+    "/home/test/Desktop/system-tool.desktop":
+      row: 3
+      col: 0
+    "/home/bennji/Desktop/steam.desktop":
+      row: 3
       col: 0
     "/home/ben/Desktop/StormOS_Browser.desktop":
       row: 1
       col: 0
-    "/home/test/Desktop/system-tool.desktop":
-      row: 3
+    "/home/liveuser/Desktop/StormOS_mirrors.desktop":
+      row: 2
       col: 0
     "/home/ben/Desktop/stormos-kernel-manager.desktop":
       row: 4
@@ -59,6 +65,9 @@ configs:
     "/home/liveuser/Desktop/system-tool.desktop":
       row: 1
       col: 1
+    "/home/bennji/Desktop/SWGEmu Launchpad.lnk":
+      row: 5
+      col: 0
     "/home/ben/Desktop/StormOS_Recorder.desktop":
       row: 8
       col: 0
@@ -83,8 +92,17 @@ configs:
     "/home/ben/Desktop/StomOS Package Manager.desktop":
       row: 0
       col: 0
+    "/home/bennji/Desktop/system-tool.desktop":
+      row: 2
+      col: 0
+    "/home/liveuser/Desktop/abif.desktop":
+      row: 2
+      col: 0
     "/home/ben/Desktop/abif.desktop":
       row: 1
+      col: 0
+    "/home/bennji/Desktop/Backups":
+      row: 4
       col: 0
     "/home/liveuser/Desktop/StormOS_Browser.desktop":
       row: 7
@@ -92,11 +110,20 @@ configs:
     "/home/ben/Desktop/StormOS_mirrors.desktop":
       row: 5
       col: 0
+    "/home/liveuser/Desktop/stormos_browser.desktop":
+      row: 0
+      col: 0
     "/home/test/Desktop/StormOS_mirrors.desktop":
       row: 2
       col: 0
+    "/home/bennji/Desktop/calamares.desktop":
+      row: 0
+      col: 0
     "/home/ben/Desktop/StormOS_Python_Manager.desktop":
       row: 7
+      col: 0
+    "/home/bennji/Desktop/abif.desktop":
+      row: 4
       col: 0
     "/home/ben/Desktop/StormOS ISO Builder.desktop":
       row: 3
@@ -107,6 +134,12 @@ configs:
     "/home/ben/Desktop/calamares.desktop":
       row: 0
       col: 1
+    "/home/bennji/Desktop/appimage_creator.desktop":
+      row: 0
+      col: 0
+    "/home/bennji/Desktop/SWGEmu Launchpad.desktop":
+      row: 6
+      col: 0
     "/home/test/Desktop/StomOS Package Manager.desktop":
       row: 4
       col: 0
@@ -118,6 +151,9 @@ configs:
       col: 0
     "/home/liveuser/Desktop/StormOS_Download_Manager.desktop":
       row: 6
+      col: 0
+    "/home/bennji/Desktop/X2Go Client.desktop":
+      row: 7
       col: 0
     "/home/liveuser/Desktop/StormOS_Recorder.desktop":
       row: 3

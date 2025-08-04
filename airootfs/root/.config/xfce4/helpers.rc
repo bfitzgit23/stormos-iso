@@ -1,4 +1,5 @@
 FileManager=Thunar
 MailReader=custom-MailReader
+WebBrowser=chromium
+WebBrowserDismissed=true
 
-WebBrowser=brave-browser
