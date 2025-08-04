@@ -4,6 +4,49 @@
 configs:
 - level: 0
   monitors:
+  - id: "4550db14c24f235dbb09f1e861f2c9645e77dcd4"
+    display_name: "Apple Computer Inc 0x9CC5 (LVDS-1)"
+    geometry:
+      x: 0
+      y: 0
+      width: 1280
+      height: 800
+  icons:
+    "/home/ricki/Desktop/stormos-build-files":
+      row: 2
+      col: 1
+    "/home/ricki/Desktop/StormOS_Download_Manager.desktop":
+      row: 2
+      col: 0
+    "/home/ricki/Desktop/stormos-kernel-manager.desktop":
+      row: 3
+      col: 0
+    "/home/ricki/Desktop/StormOS_mirrors.desktop":
+      row: 4
+      col: 0
+    "/home/ricki/Desktop/system-tool.desktop":
+      row: 0
+      col: 1
+    "/home/ricki/Desktop/StormOS_Recorder.desktop":
+      row: 6
+      col: 0
+    "/home/ricki/Desktop/StormOS_Python_Manager.desktop":
+      row: 5
+      col: 0
+    "/home/ricki/Desktop/StomOS Package Manager.desktop":
+      row: 1
+      col: 0
+    "/home/ricki/Desktop/Guvcview.desktop":
+      row: 0
+      col: 0
+    "/home/ricki/Desktop/StormOS-ISO":
+      row: 1
+      col: 1
+    "/home/ricki/Desktop/StormOS-Pescado-XFCE-2024.12.26-x86_64.iso":
+      row: 0
+      col: 4
+- level: 0
+  monitors:
   - id: "bd4586e4497d69c4858f7e8bf6d6f8c31b59d3a3"
     display_name: "Najing CEC Panda FPD Technology CO. ltd 0x004D (eDP-1)"
     geometry:
@@ -95,6 +138,12 @@ configs:
     "/home/test/Desktop/StormOS_mirrors.desktop":
       row: 2
       col: 0
+    "/home/liveuser/Desktop/stormos_browser.desktop":
+      row: 0
+      col: 0
+    "/home/liveuser/Desktop/abif.desktop":
+      row: 2
+      col: 0
     "/home/ben/Desktop/StormOS_Python_Manager.desktop":
       row: 7
       col: 0
@@ -122,46 +171,3 @@ configs:
     "/home/liveuser/Desktop/StormOS_Recorder.desktop":
       row: 3
       col: 0
-- level: 0
-  monitors:
-  - id: "4550db14c24f235dbb09f1e861f2c9645e77dcd4"
-    display_name: "Apple Computer Inc 0x9CC5 (LVDS-1)"
-    geometry:
-      x: 0
-      y: 0
-      width: 1280
-      height: 800
-  icons:
-    "/home/ricki/Desktop/stormos-build-files":
-      row: 2
-      col: 1
-    "/home/ricki/Desktop/StormOS_Download_Manager.desktop":
-      row: 2
-      col: 0
-    "/home/ricki/Desktop/stormos-kernel-manager.desktop":
-      row: 3
-      col: 0
-    "/home/ricki/Desktop/StormOS_mirrors.desktop":
-      row: 4
-      col: 0
-    "/home/ricki/Desktop/system-tool.desktop":
-      row: 0
-      col: 1
-    "/home/ricki/Desktop/StormOS_Recorder.desktop":
-      row: 6
-      col: 0
-    "/home/ricki/Desktop/StormOS_Python_Manager.desktop":
-      row: 5
-      col: 0
-    "/home/ricki/Desktop/StomOS Package Manager.desktop":
-      row: 1
-      col: 0
-    "/home/ricki/Desktop/Guvcview.desktop":
-      row: 0
-      col: 0
-    "/home/ricki/Desktop/StormOS-ISO":
-      row: 1
-      col: 1
-    "/home/ricki/Desktop/StormOS-Pescado-XFCE-2024.12.26-x86_64.iso":
-      row: 0
-      col: 4

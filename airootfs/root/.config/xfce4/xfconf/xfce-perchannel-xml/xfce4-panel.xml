@@ -12,15 +12,10 @@
       <property name="icon-size" type="uint" value="0"/>
       <property name="size" type="uint" value="34"/>
       <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
         <value type="int" value="7"/>
         <value type="int" value="22"/>
         <value type="int" value="19"/>
-        <value type="int" value="4"/>
-        <value type="int" value="21"/>
-        <value type="int" value="20"/>
-        <value type="int" value="16"/>
-        <value type="int" value="15"/>
-        <value type="int" value="17"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
         <value type="int" value="5"/>
@@ -62,6 +57,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="networking disabled"/>
         <value type="string" value="wi-fi network connection “spectrumsetup-3891” active: spectrumsetup-3891 (64%)"/>
         <value type="string" value="pamac-tray"/>
         <value type="string" value="ethernet network connection “wired connection 1” active"/>
@@ -89,8 +85,8 @@
       </property>
       <property name="icon-size" type="int" value="0"/>
     </property>
-    <property name="plugin-7" type="string" value="whiskermenu">
-      <property name="style" type="empty"/>
+    <property name="plugin-7" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
       <property name="position-categories-horizontal" type="bool" value="false"/>
       <property name="position-categories-alternate" type="bool" value="true"/>
       <property name="position-profile-alternate" type="bool" value="true"/>
@@ -112,6 +108,7 @@
         <value type="string" value="xfce-ui-settings.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
       </property>
+      <property name="expand" type="bool" value="true"/>
     </property>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="digital-layout" type="empty"/>
@@ -123,15 +120,17 @@
       <property name="show-notifications" type="bool" value="true"/>
       <property name="known-players" type="string" value="Brave;Chromium;Vivaldi;vlc"/>
     </property>
-    <property name="plugin-1" type="empty">
-      <property name="hover-switch-category" type="empty"/>
+    <property name="plugin-1" type="string" value="whiskermenu">
+      <property name="hover-switch-category" type="bool" value="true"/>
       <property name="category-icon-size" type="empty"/>
       <property name="menu-opacity" type="empty"/>
       <property name="recent" type="empty"/>
-      <property name="button-icon" type="empty"/>
+      <property name="button-icon" type="string" value="storm os"/>
       <property name="show-button-title" type="empty"/>
       <property name="button-title" type="empty"/>
       <property name="favorites" type="empty"/>
+      <property name="position-categories-alternate" type="bool" value="true"/>
+      <property name="position-profile-alternate" type="bool" value="true"/>
     </property>
     <property name="plugin-4" type="string" value="launcher">
       <property name="items" type="array">
@@ -173,10 +172,6 @@
         <value type="string" value="-logout-dialog"/>
       </property>
     </property>
-    <property name="plugin-17" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-      <property name="expand" type="bool" value="true"/>
-    </property>
     <property name="plugin-19" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="15657829131.desktop"/>
@@ -185,24 +180,6 @@
     <property name="plugin-22" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="15657829254.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-15" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-16" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17507103482.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-20" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17507103554.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-21" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17507125195.desktop"/>
       </property>
     </property>
   </property>
