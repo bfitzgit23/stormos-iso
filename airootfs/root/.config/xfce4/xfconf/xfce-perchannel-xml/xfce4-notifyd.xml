@@ -5,6 +5,7 @@
   <property name="expire-timeout" type="int" value="6"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="balenaEtcher"/>
       <value type="string" value="CachyOS Update"/>
       <value type="string" value="chromium"/>
       <value type="string" value="discord"/>

@@ -89,17 +89,17 @@ configs:
     "/home/liveuser/Desktop/StormOS ISO Builder.desktop":
       row: 8
       col: 0
-    "/home/ben/Desktop/StomOS Package Manager.desktop":
-      row: 0
+    "/home/liveuser/Desktop/abif.desktop":
+      row: 2
       col: 0
     "/home/bennji/Desktop/system-tool.desktop":
       row: 2
       col: 0
-    "/home/liveuser/Desktop/abif.desktop":
-      row: 2
-      col: 0
     "/home/ben/Desktop/abif.desktop":
       row: 1
+      col: 0
+    "/home/ben/Desktop/StomOS Package Manager.desktop":
+      row: 0
       col: 0
     "/home/bennji/Desktop/Backups":
       row: 4
@@ -127,6 +127,9 @@ configs:
       col: 0
     "/home/ben/Desktop/StormOS ISO Builder.desktop":
       row: 3
+      col: 0
+    "/home/bennji/Desktop/EC":
+      row: 5
       col: 0
     "/home/ben/Desktop/system-tool.desktop":
       row: 0
