@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=StormOS System Tool
+GenericName=StormOS System Tool
+X-GNOME-FullName=StormOS System Tool
+Comment=Tweak StormOS with ease
+Exec=/usr/local/bin/sysconfig
+Icon=/usr/share/icons/storm os.png
+Terminal=false
+Type=Application
+Categories=GTK;GNOME;Utility;Settings;Security;X-GNOME-Settings-Panel;X-GNOME-SystemSettings;X-Unity-Settings-Panel;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+Keywords=tweak;tool;
+StartupNotify=false
