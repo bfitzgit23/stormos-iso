@@ -36,5 +36,9 @@ file_permissions=(
   ["/usr/bin/calamares"]="0:0:755"
   ["/usr/bin/wifi-connection.sh"]="0:0:755"
   ["/usr/bin/icarus14b.py"]="0:0:755"
+  ["/root/.config/autostart/calamares.desktop"]="0:0:755"
+  ["/root/.config/autostart/NetworkManager.desktop"]="0:0:755"
+  ["/root/.config/autostart/readme"]="0:0:755"
+  ["/root/.config/autostart/welcome"]="0:0:755"
+  ["/root/.config/autostart/welcome.desktop"]="0:0:755"
 )
-

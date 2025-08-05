@@ -130,10 +130,10 @@
       <property name="category-icon-size" type="empty"/>
       <property name="menu-opacity" type="empty"/>
       <property name="recent" type="array">
-        <value type="string" value="org.flameshot.Flameshot.desktop"/>
         <value type="string" value="chromium.desktop"/>
         <value type="string" value="balena-etcher.desktop"/>
         <value type="string" value="wine-Programs-SWGEmu-SWGEmu Launchpad-SWGEmu Launchpad.desktop"/>
+        <value type="string" value="org.flameshot.Flameshot.desktop"/>
         <value type="string" value="protonvpn.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
         <value type="string" value="wine-Programs-X2Go Client for Windows-X2Go Client.desktop"/>
