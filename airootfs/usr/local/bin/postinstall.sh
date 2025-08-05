@@ -77,11 +77,11 @@ plymouth-set-default-theme stormos
 
 echo "Defaults pwfeedback" | sudo EDITOR='tee -a' visudo >/dev/null 2>&1
 
-pacman-key --init
-pacman-key --populate archlinux # Manjaro users may also add manjaro
+#pacman-key --init
+#pacman-key --populate archlinux # Manjaro users may also add manjaro
 
-pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
-pacman-key --lsign-key 3056513887B78AEB
+#pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+#pacman-key --lsign-key 3056513887B78AEB
 
 rm -rf /usr/share/backgrounds/xfce
 chown -R $name:$name /usr/share/backgrounds/* 
