@@ -87,5 +87,4 @@ rm -rf /usr/share/backgrounds/xfce
 chown -R $name:$name /usr/share/backgrounds/* 
 
 #rm $home/$name/Desktop/calamares.desktop
-rm $home/$name/.config/autostart/wifi-connection.sh
 
