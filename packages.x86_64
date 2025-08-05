@@ -152,6 +152,7 @@ calamares-config-xfce
 # webapp-manager
 cups
 xxkpmcore
+xxlibxml2-so.2
 kpmcore
 electron31
 networkmanager
