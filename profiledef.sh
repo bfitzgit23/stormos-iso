@@ -43,6 +43,6 @@ file_permissions=(
   ["/root/.config/autostart/welcome.desktop"]="0:0:755"
   ["/root/Desktop/calamares.desktop"]="0:0:755"
   ["/root/Desktop/abif.desktop"]="0:0:755"
-  ["/root//Desktop/stormos_browser.desktop"]="0:0:755"
+  ["/root/Desktop/stormos_browser.desktop"]="0:0:755"
   ["/root/Desktop/system-tool.desktop"]="0:0:755"
 )
